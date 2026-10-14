@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Envíos Alpes</string>
+    <string name="title_main">Registro de solicitudes</string>
+    <string name="title_solicitud">Solicitud de envío</string>
+    <string name="title_caracteristicas">Características del envío</string>
+
+    <!-- Acciones del toolbar -->
+    <string name="action_nueva">Nueva solicitud</string>
+    <string name="action_caracteristicas">Características del envío</string>
+    <string name="action_notificacion">Crear notificación</string>
+
+    <!-- Formulario -->
+    <string name="hint_remitente">Nombre del remitente</string>
+    <string name="hint_destinatario">Nombre del destinatario</string>
+    <string name="hint_origen">Dirección de recogida</string>
+    <string name="hint_destino">Dirección de entrega</string>
+    <string name="hint_ciudad">Ciudad de destino</string>
+    <string name="hint_peso">Peso (kg)</string>
+    <string name="hint_descripcion">Descripción del contenido</string>
+    <string name="label_tipo">Tipo de paquete</string>
+    <string name="btn_registrar">Registrar solicitud</string>
+    <string name="btn_compartir">Compartir</string>
+    <string name="sin_solicitudes">Aún no hay solicitudes. Toca + en la barra superior para crear una.</string>
+
+    <string-array name="tipos_paquete">
+        <item>Documento</item>
+        <item>Paquete pequeño</item>
+        <item>Paquete mediano</item>
+        <item>Paquete grande</item>
+        <item>Frágil</item>
+    </string-array>
+
+    <!-- Notificación -->
+    <string name="canal_nombre">Solicitudes de envío</string>
+    <string name="canal_descripcion">Avisos sobre las solicitudes de envío registradas</string>
+</resources>

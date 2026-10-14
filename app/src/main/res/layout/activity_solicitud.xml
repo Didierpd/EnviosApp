@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText android:id="@+id/et_remitente"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_remitente" android:inputType="textPersonName" />
+
+            <EditText android:id="@+id/et_destinatario"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_destinatario" android:inputType="textPersonName" />
+
+            <EditText android:id="@+id/et_origen"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_origen" android:inputType="textPostalAddress" />
+
+            <EditText android:id="@+id/et_destino"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_destino" android:inputType="textPostalAddress" />
+
+            <EditText android:id="@+id/et_ciudad"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_ciudad" android:inputType="textCapWords" />
+
+            <EditText android:id="@+id/et_peso"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_peso" android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/label_tipo" />
+
+            <Spinner android:id="@+id/sp_tipo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:entries="@array/tipos_paquete" />
+
+            <EditText android:id="@+id/et_descripcion"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_descripcion" android:inputType="textMultiLine"
+                android:minLines="2" />
+
+            <Button android:id="@+id/btn_registrar"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/btn_registrar" />
+
+            <Button android:id="@+id/btn_compartir"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/btn_compartir" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
